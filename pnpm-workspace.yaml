@@ -1,0 +1,10 @@
+allowBuilds:
+  '@firebase/util': false
+  protobufjs: false
+  esbuild: true
+  fsevents: false
+  sharp: true
+  unrs-resolver: true
+  workerd: true
+overrides:
+  miniflare>sharp: 0.35.4

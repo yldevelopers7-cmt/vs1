@@ -1,0 +1,465 @@
+[
+  {
+    "name": "atta",
+    "file": "atta.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/126903_12-aashirvaad-atta-whole-wheat.jpg",
+    "source_html": "atta.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pd/126903/aashirvaad-atta-/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/atta.png"
+  },
+  {
+    "name": "butter",
+    "file": "butter.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/104860_10-amul-butter-pasteurised.jpg",
+    "source_html": "butter.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pd/104860/amul-butter-pasteurised-100-g-carton/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/butter.png"
+  },
+  {
+    "name": "rice",
+    "file": "rice.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/283426_7-india-gate-basmati-rice-feast-rozzana.jpg",
+    "source_html": "rice.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pb/india-gate/basmati-rice/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/rice.png",
+    "note": "India Gate Feast Rozzana 1 kg pouch. Previous rice.jpg is Classic 5 kg studio image if preferred."
+  },
+  {
+    "name": "oil",
+    "file": "oil.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40361379_2-fortune-sunlite-refined-sunflower-oil.jpg",
+    "source_html": "oil.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pb/fortune/edible-oils-ghee/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/oil.png"
+  },
+  {
+    "name": "tea",
+    "file": "tea.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/263642_23-tata-tea-gold-tea.jpg",
+    "source_html": "tea.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pd/263642/tata-tea-gold-tea-250-g/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/tea.png"
+  },
+  {
+    "name": "maggi",
+    "file": "maggi.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/266160_33-maggi-masala-instant-noodles-vegetarian.jpg",
+    "source_html": "maggi.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pd/266160/maggi-masala-instant-noodles-vegetarian-70-g-pouch/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/maggi.png"
+  },
+  {
+    "name": "goodday",
+    "file": "goodday.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40023488_13-britannia-good-day-butter-cookies.jpg",
+    "source_html": "goodday.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pd/40023488/britannia-good-day-butter-cookies-200-g/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/goodday.png"
+  },
+  {
+    "name": "salt",
+    "file": "salt.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/241600_11-tata-salt-iodized.jpg",
+    "source_html": "salt.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pd/241600/tata-salt-iodized-1-kg-pouch/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/salt.png"
+  },
+  {
+    "name": "colgate",
+    "file": "colgate.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/100006161_31-colgate-strong-teeth-anticavity-toothpaste-with-amino-shakti-formula-provides-fresher-breath.jpg",
+    "source_html": "colgate.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pd/100006161/colgate-strong-teeth-anticavity-toothpaste-with-amino-shakti-formula-provides-fresher-breath-100-g/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/colgate.png"
+  },
+  {
+    "name": "chocolate",
+    "file": "chocolate.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/100020979_14-cadbury-dairy-milk-chocolate-bar.jpg",
+    "source_html": "chocolate.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pb/cadbury-dairy-milk/chocolates-candies/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/chocolate.png",
+    "note": "13.2 g bar. Retailer front image includes a purple Chocolate Bar / 13.2 label panel. Avoid original chocolate.jpg packaging comparison image."
+  },
+  {
+    "name": "onion",
+    "file": "onion.jpg",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/10000148_35-fresho-onion.jpg",
+    "source_html": "produce.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/cl/fruits-vegetables/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": false,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/onion.jpg"
+  },
+  {
+    "name": "potato",
+    "file": "potato.jpg",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40048457_20-fresho-potato-new-crop.jpg",
+    "source_html": "produce.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/cl/fruits-vegetables/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": false,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/potato.jpg"
+  },
+  {
+    "name": "carrot",
+    "file": "carrot.jpg",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/10000070_17-fresho-carrot-orange.jpg",
+    "source_html": "produce.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/cl/fruits-vegetables/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": false,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/carrot.jpg"
+  },
+  {
+    "name": "tomato",
+    "file": "tomato.jpg",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/10000203_19-fresho-tomato-local.jpg",
+    "source_html": "produce.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/cl/fruits-vegetables/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": false,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/tomato.jpg"
+  },
+  {
+    "name": "banana",
+    "file": "banana.jpg",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/10000031_22-fresho-banana-yelakki.jpg",
+    "source_html": "produce.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/cl/fruits-vegetables/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": false,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/banana.jpg"
+  },
+  {
+    "name": "surf",
+    "file": "surf.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40101707_14-surf-excel-easy-wash-detergent-powder.jpg",
+    "source_html": "surf.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pd/40101707/surf-excel-easy-wash-detergent-powder-1-kg/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/surf.png"
+  },
+  {
+    "name": "bread",
+    "file": "bread.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40162924_8-britannia-100-whole-wheat-bread.jpg",
+    "source_html": "bread.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pd/40162924/britannia-100-whole-wheat-bread-450-g-pouch/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/bread.png"
+  },
+  {
+    "name": "apple",
+    "file": "apple.jpg",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/10000005_29-fresho-apple-royal-gala-economy.jpg",
+    "source_html": "fruits.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": false,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/apple.jpg"
+  },
+  {
+    "name": "orange",
+    "file": "orange.jpg",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/20003955_6-fresho-baby-orange.jpg",
+    "source_html": "fruits.html",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "source_url": "https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": false,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/orange.jpg"
+  },
+  {
+    "name": "milk",
+    "file": "milk.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40147623_2-amul-shakti-pouch-milk.jpg",
+    "source_url": "https://bbnow.bigbasket.com/pd/40147623/amul-shakti-pouch-milk-500-ml-pouch/",
+    "reuse": "Retailer catalog photography; no open license verified.",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/milk.png"
+  },
+  {
+    "name": "hero",
+    "file": "hero.jpg",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/hero.jpg",
+    "image_url": "https://images.pexels.com/photos/2255924/pexels-photo-2255924.jpeg",
+    "source_url": "https://www.pexels.com/photo/assorted-variety-of-vegetables-on-basket-2255924/",
+    "credit": "Mark Stebnicki / Pexels",
+    "reuse": "Pexels License: free for commercial website use; attribution optional. https://www.pexels.com/license/",
+    "size": [
+      4096,
+      2731
+    ]
+  },
+  {
+    "name": "curd",
+    "file": "curd.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/curd.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/104851_5-amul-masti-dahi.jpg",
+    "source_url": "https://www.bigbasket.com/pd/104851/amul-masti-dahi-400-g-cup/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "parleg",
+    "file": "parleg.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/parleg.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40009934_11-parle-g-gold-gluco-biscuits.jpg",
+    "source_url": "https://www.bigbasket.com/pd/40009934/parle-g-gold-gluco-biscuits-200-g-pouch/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "cocacola",
+    "file": "cocacola.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/cocacola.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/251023_12-coca-cola-soft-drink-original-taste.jpg",
+    "source_url": "https://www.bigbasket.com/pd/251023/coca-cola-soft-drink-original-taste-750-ml-pet-bottle/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "pepsi",
+    "file": "pepsi.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/pepsi.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/251047_26-pepsi-soft-drink.jpg",
+    "source_url": "https://www.bigbasket.com/pd/251047/pepsi-soft-drink-750-ml/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "bisleri",
+    "file": "bisleri.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/bisleri.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/265875_9-bisleri-mineral-water.jpg",
+    "source_url": "https://www.bigbasket.com/pd/265875/bisleri-mineral-water-1-l-bottle/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "dettol",
+    "file": "dettol.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/dettol.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/263699_36-dettol-liquid-handwash-original-everyday-protection-fights-germs.jpg",
+    "source_url": "https://www.bigbasket.com/pd/263699/dettol-liquid-handwash-original-everyday-protection-fights-germs-200-ml-bottle-pump/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "lux",
+    "file": "lux.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/lux.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/276959_12-lux-beauty-soap-for-glowing-skin-rose-vitamin-e-mega.jpg",
+    "source_url": "https://www.bigbasket.com/pd/276959/lux-beauty-soap-for-glowing-skin-rose-vitamin-e-mega-100-g/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "dove",
+    "file": "dove.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/dove.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/229141_13-dove-intense-repair-shampoo.jpg",
+    "source_url": "https://www.bigbasket.com/pd/229141/dove-intense-repair-shampoo-340-ml/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "ariel",
+    "file": "ariel.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/ariel.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40355726_3-ariel-perfect-wash-detergent-powder.jpg",
+    "source_url": "https://www.bigbasket.com/pd/40355726/ariel-perfect-wash-detergent-powder-1-kg-pouch/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "vim",
+    "file": "vim.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/vim.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/266962_13-vim-dishwash-liquid-gel-lemon.jpg",
+    "source_url": "https://www.bigbasket.com/pd/266962/vim-dishwash-liquid-gel-lemon-500-ml-bottle/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "toordal",
+    "file": "toordal.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/toordal.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40000291_16-tata-sampann-unpolished-toor-dalarhar-dal.jpg",
+    "source_url": "https://www.bigbasket.com/pd/40000291/tata-sampann-unpolished-toor-dalarhar-dal-1-kg-pouch/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "johnson",
+    "file": "johnson.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/johnson.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/261013_11-johnsons-baby-baby-powder.jpg",
+    "source_url": "https://www.bigbasket.com/pd/261013/johnsons-baby-baby-powder-200-g/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  },
+  {
+    "name": "modernbread",
+    "file": "modernbread.png",
+    "local_path": "/workspace/scratch/0c5471546cda/grocery-assets/modernbread.png",
+    "image_url": "https://www.bbassets.com/media/uploads/p/xl/40000564_19-modern-100-whole-wheat-bread-daily-dose-of-fibre-protein.jpg",
+    "source_url": "https://www.bigbasket.com/pd/40000564/modern-100-whole-wheat-bread-daily-dose-of-fibre-protein-400-g-pouch/",
+    "size": [
+      600,
+      600
+    ],
+    "transparent": true,
+    "reuse": "Retailer catalog photography; no open license verified."
+  }
+]
