@@ -1,0 +1,42 @@
+import {PGlite} from '@electric-sql/pglite';
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const pg=new PGlite();let assertions=0;
+await pg.exec(`create role anon;create role authenticated;create schema auth;create function auth.jwt() returns jsonb language sql stable as $$ select coalesce(nullif(current_setting('request.jwt.claims',true),''),'{}')::jsonb $$;grant usage on schema public,auth to anon,authenticated;grant execute on function auth.jwt() to anon,authenticated;`);
+const schema=readFileSync('supabase/schema.sql','utf8').split('-- Optional product photo uploads.')[0];
+await pg.exec(schema);await pg.exec(readFileSync('supabase/seed.sql','utf8'));
+async function asUser(id,admin=false){await pg.exec('reset role');await pg.query(`select set_config('request.jwt.claims',$1,false)`,[JSON.stringify({sub:id,phone_number:'+919876543210',role:'authenticated',vmart_admin:admin})]);await pg.exec('set role authenticated');}
+async function rejects(fn,contains){try{await fn();throw Error('Expected rejection');}catch(e){assert.ok(e.message.includes(contains),`${e.message} should contain ${contains}`);assertions++;}}
+async function order(basket,key,method='delivery',pin='572107'){return (await pg.query('select public.place_order($1::jsonb,$2,$3::jsonb,$4,$5::uuid) as o',[JSON.stringify(basket),'Test Customer',JSON.stringify({house:'12 Test Street',area:'Mallasandra',city:'Tumakuru',pin}),method,key])).rows[0].o;}
+await pg.exec('set role anon');assert.equal((await pg.query('select count(*)::int as n from public.products')).rows[0].n,32);assertions++;
+await rejects(()=>pg.query('select * from public.orders'),'permission denied');
+await rejects(()=>order([{id:1,qty:1}],'00000000-0000-4000-8000-000000000001'),'permission denied');
+await asUser('customer-a');
+await pg.query(`insert into public.profiles(uid,name,phone) values('customer-a','Test Customer','+919876543210')`);
+await rejects(()=>pg.query(`insert into public.profiles(uid,name,phone) values('customer-b','Other','+919876543210')`),'row-level security');
+assert.equal((await pg.query(`update public.products set price=1 where id=1 returning *`)).rows.length,0);assertions++;
+await rejects(()=>pg.query(`insert into public.orders(user_id,request_key,customer_name,phone,items,subtotal,savings,delivery_fee,total,fulfilment,address) values('customer-a',gen_random_uuid(),'X','Y','[]',0,0,0,0,'pickup','{}')`),'permission denied');
+await rejects(()=>order([{id:1,qty:0}],'00000000-0000-4000-8000-000000000002'),'Invalid quantity');
+await rejects(()=>order([{id:1,qty:1},{id:1,qty:1}],'00000000-0000-4000-8000-000000000003'),'Duplicate');
+await rejects(()=>order([{id:1,qty:1}],'00000000-0000-4000-8000-000000000004','delivery','999999'),'not available');
+const a=await order([{id:1,qty:2,price:1}],'00000000-0000-4000-8000-000000000005');
+assert.equal(a.subtotal,66);assert.equal(a.total,96);assert.equal(a.phone,'+919876543210');assertions+=3;
+assert.equal((await pg.query('select stock from public.products where id=1')).rows[0].stock,78);assertions++;
+const duplicate=await order([{id:1,qty:2}],'00000000-0000-4000-8000-000000000005');assert.equal(duplicate.id,a.id);assert.equal((await pg.query('select stock from public.products where id=1')).rows[0].stock,78);assertions+=2;
+await rejects(()=>order([{id:1,qty:1},{id:4,qty:99}],'00000000-0000-4000-8000-000000000006'),'available');
+assert.equal((await pg.query('select stock from public.products where id=1')).rows[0].stock,78);assertions++;
+const pickup=await order([{id:1,qty:1}],'00000000-0000-4000-8000-000000000007','pickup','999999');assert.equal(pickup.delivery_fee,0);assertions++;
+const big=await order([{id:4,qty:2}],'00000000-0000-4000-8000-000000000008');assert.equal(big.total,510);assert.equal(big.delivery_fee,0);assertions+=2;
+await rejects(()=>pg.query(`select public.set_order_status($1,'Delivered')`,[a.id]),'Administrator access');
+await asUser('customer-b');assert.equal((await pg.query('select * from public.orders')).rows.length,0);assert.equal((await pg.query('select * from public.profiles')).rows.length,0);assertions+=2;
+await pg.query(`insert into public.carts(user_id,items) values('customer-b','{"1":2}')`);
+await asUser('customer-a');assert.equal((await pg.query('select * from public.carts')).rows.length,0);assertions++;
+await asUser('staff',true);assert.equal((await pg.query('select * from public.orders')).rows.length,3);assertions++;
+await rejects(()=>pg.query(`select public.set_order_status($1,'Delivered')`,[a.id]),'dispatched');
+await pg.query(`select public.set_order_status($1,'Cancelled')`,[a.id]);assert.equal((await pg.query('select stock from public.products where id=1')).rows[0].stock,79);assertions++;
+await pg.query(`select public.set_order_status($1,'Cancelled')`,[a.id]);assert.equal((await pg.query('select stock from public.products where id=1')).rows[0].stock,79);assertions++;
+await rejects(()=>pg.query(`select public.set_order_status($1,'Preparing')`,[a.id]),'already complete');
+await pg.query(`select public.set_order_status($1,'Preparing')`,[pickup.id]);await rejects(()=>pg.query(`select public.set_order_status($1,'Out for delivery')`,[pickup.id]),'delivery order');
+await pg.query(`select public.set_order_status($1,'Ready for pickup')`,[pickup.id]);const done=(await pg.query(`select public.set_order_status($1,'Delivered') as o`,[pickup.id])).rows[0].o;assert.equal(done.payment_status,'Collected');assertions++;
+console.log(`PASS: ${assertions} database assertions (RLS, ownership, admin access, trusted prices, stock rollback, delivery charges, retry idempotency, cancellation and order transitions).`);
+await pg.close();

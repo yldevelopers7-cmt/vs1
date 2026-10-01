@@ -1,0 +1,11 @@
+{
+  "firebase": {
+    "apiKey": "",
+    "authDomain": "",
+    "projectId": "",
+    "appId": ""
+  },
+  "functionsRegion": "us-central1",
+  "supabaseUrl": "",
+  "supabaseKey": ""
+}
